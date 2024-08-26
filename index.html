@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    
+    <main class="challenge">
+        
+        <section class="challenge__Banner">
+        
+            <img id="logo" src="./assets/Logo.png" alt="Alura">
+        
+        </section>
+
+        <section class="challenge__Texto">
+        
+            <div>
+        
+                <textarea id="texto" class="container__input"  placeholder="Ingrese el texto aqui"></textarea>
+        
+            </div>
+
+            <div class="challenge__Texto__Aviso">
+        
+                <img  src="./assets/bi_exclamation-circle-fill.png" alt="Cuidado">
+                <p class="aviso">Solo letras minúsculas y sin acentos</p>
+        
+            </div>
+
+            <div class="challenge__Texto__Botones">
+        
+                <button onclick="encriptar()" id="encriptar" class="boton__Encriptar">Encriptar</button>
+                <button onclick="desencriptar()" id="desencriptar" class="boton__Desencriptar">Desencriptar </button>
+        
+            </div>
+
+        </section>
+        
+        <section class="challenge__Encriptacion">
+            
+            <div class="challenge__Encriptador__Caja">
+                
+                <div id="inicio" class="challenge__Encriptador__Caja__Inicio">
+                    
+                    <img id="imagen" src="./assets/Muñeco.png" alt="">
+                    
+                    <div class="challenge__Encriptador__Caja__Inicio__Texto">
+                    
+                        <p id="aviso">Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    
+                    </div>
+                    
+                </div>
+
+                <div id="textoCaja" class="challenge__Encriptador__Caja__Encriptacion">
+                
+                    <div class="challenge__Encriptador__Caja__Encriptacion__Final">
+                        <textarea readonly id="textoEncriptacion">ksssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</textarea>
+                        
+                        <button onclick="copiar()" id="copiar" class="boton__Copiar">Copiar</button>
+                
+                    </div>
+                
+                </div>
+
+                
+                
+            </div>
+            
+        </section>
+    </main>
+   
+    <script src="codigo.js"></script>
+</body>
+</html>
