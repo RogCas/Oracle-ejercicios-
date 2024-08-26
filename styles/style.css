@@ -219,7 +219,7 @@ button{
         gap:16px;
     }
     #logo{
-        content: url("./assets/logot.png");
+        src: local("./assets/logoc.png");
 
     }
     .challenge__Texto__Aviso{
@@ -277,7 +277,7 @@ button{
         gap:16px;
     }
     #logo{
-        content: url("./assets/logoc.png");
+        src: local("./assets/logot.png");
 
     }
     
